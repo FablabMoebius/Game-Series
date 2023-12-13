@@ -1,7 +1,7 @@
 # Partie 1 - Exploration
 
 ## Mission 0 : Atterrissage
-- [ ] Télécharger le fichier draw_base.py qui servira de base pour les missions suivantes.
+- [ ] Télécharger le fichier [`draw_base.py`](draw_base.py) qui servira de base pour les missions suivantes.
 - [ ] Ouvrir le fichier dans un éditeur de texte.
 - [ ] Exécuter le fichier.
 
