@@ -51,14 +51,14 @@ _Note :_
   - [ ] Faire un `print("battle")` (ou `print("bisous")`, comme vous préférez) lorsque le héros et le méchant sont en contact.
 
 _Note :_
+- La méthode [`colliderect`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect) de cet objet permet de détecter la collision entre 2 objets de type `Rect`.
+- Enregistrer la variable de retour du `draw` pour obtenir un objet `Rect`.
 - `colliderect` s’appuie sur la notion de `Rect`, sur laquelle nous reviendrons dans la mission 8-B.
 
 <details>
 <summary>Indices</summary>
-
-- Enregistrer la variable de retour des `draw` (pour obtenir un objet `Rect`).
-- La méthode [`colliderect`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect) de cet objet permet de détecter la collision entre 2 objets de type `Rect`.  
-_Exemple : `player_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`)._
+ 
+- Exemple : `player_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`).
 </details>
 
 ## Mission 6 : ~~Du sang~~ Du rouge sur les mains
@@ -87,13 +87,13 @@ _Préambule_ :
 
 Vous qui suivez ces missions avec ferveur, il faut absolument qu'on vous avoue quelque chose : 
 
-**Utiliser `draw` pour gérer des animations, ce n'est pas top, du tout...**
+**Utiliser `draw` pour gérer des animations, ce n'est pas top...**
 
 En effet, `draw` s'occupe à la fois de générer la forme, la remplir d'une couleur, la positionner et enfin de l'"afficher" sur l'écran (pris en compte par le `display.flip()` final).  
-Pour découvrir pygame, c'était très pratique, toutefois, pour gérer plus finement et efficacement l'affichage, on va préférer utiliser des
+Pour découvrir PyGame, c'était très pratique, toutefois, pour gérer plus finement et efficacement l'affichage, on va préférer utiliser des
 objets spécialement conçus pour gérer chacune de ses fonctions.
 
-Pour cette mission, on va s’intéresser à 2 notions de base de pygame:
+Pour cette mission, on va s’intéresser à 2 notions de base de PyGame:
 - les objets `Surface` pour gérer les **images** (ou formes),
 - la méthode `blit` pour **recopier** ces images sur une surface comme l’écran.
 
@@ -126,7 +126,7 @@ Je tiens toutefois à dévoiler que ce petit humain aura un vrai visage dès la 
 <details>
 <summary>Indices</summary>
 
-Exemple d'utilisation :
+- Exemple d'utilisation avec une balle:
 ```python
 # en dehors de la boucle
 ball_surface = pygame.Surface((width, height))
@@ -134,7 +134,6 @@ ball_surface.fill((R, G, B))
 # dans la boucle
 screen.blit(ball_surface, (x, y)) # copier la "peinture" de la ball à la position (x, y) de l’écran
 ```
-
 - L’appel à `blit` ne remplace pas l’appel à `display.flip()` qui s’occupe de mettre à jour la fenêtre graphique.
 </details>
 
@@ -142,7 +141,7 @@ screen.blit(ball_surface, (x, y)) # copier la "peinture" de la ball à la positi
 
 _Préambule_ :
 
-Parce que notre ~~puissance~~ curiosité n’a pas de limite, on va s’intéresser à une autre notion de base de pygame : les objets `Rect`.
+Parce que notre ~~puissance~~ curiosité n’a pas de limite, on va s’intéresser à une autre notion de base de PyGame : les objets `Rect`.
 Ils vont nous permettre de gérer la **position** des images.
 
 En fait, on peut imager un objet `Rect` comme un cadre pour un tableau.  
@@ -162,7 +161,7 @@ Et comme le monde est bien fait, la fonction `blit` peut prendre en paramètre u
 <details>
 <summary>Indice</summary>
 
-Exemple d'utilisation :
+Exemple d'utilisation avec une balle :
 ```python
 # en dehors de la boucle
 ball_rectangle = ball_surface.get_rect()  # générer un cadre de la taille de la surface.  spécifier une position avec center=(x, y)

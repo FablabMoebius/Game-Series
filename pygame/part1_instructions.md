@@ -72,7 +72,7 @@ _Note :_
 </details>
 
 ## Prochaine mission ? 
-Bravo 👍 ! Vous avez terminé la première exploration de l'outil `pygame` ! (et vous avez obtenu le grade **Scout** 🔥, si jamais ça pouvait vous faire de l'effet)
+Bravo 👍 ! Vous avez terminé la première exploration de l'outil PyGame ! (et vous avez obtenu le grade **Scout** 🔥, si jamais ça pouvait vous faire de l'effet)
 
 
 Pour continuer vos expériences vidéo ludique avec un héro 🦸‍, un bouclier 🛡 et des méchants 😈... Allez voir la [Partie 2](part2_instructions.md) !
