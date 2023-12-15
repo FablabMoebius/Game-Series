@@ -51,9 +51,8 @@ _Note :_
   - [ ] Faire un `print("battle")` (ou `print("bisous")`, comme vous préférez) lorsque le héros et le méchant sont en contact.
 
 _Note :_
-- La méthode [`colliderect`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect) de cet objet permet de détecter la collision entre 2 objets de type `Rect`.
 - Enregistrer la variable de retour du `draw` pour obtenir un objet `Rect`.
-- `colliderect` s’appuie sur la notion de `Rect`, sur laquelle nous reviendrons dans la mission 8-B.
+- La méthode [`colliderect`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect) de cet objet permet de détecter la collision entre 2 objets de type `Rect`.
 
 <details>
 <summary>Indices</summary>
@@ -70,7 +69,7 @@ _Note :_
 _Note :_
 - Toute nuance de rouge est acceptée.
 - Ignorer le bouclier pour l'instant.
-- La caractéristique de base correspondant à la vitalité de votre héros (nombre de point de vie) est libre, toutefois une valeur supérieure à 50 est conseillée.
+- Le nombre de point de vie max de votre héros est libre, toutefois une valeur supérieure à 50 est conseillée.
 - C'est OK de perdre de la vie en continu tant que le héros touche notre ennemi (disons... toxique).
 <details>
 <summary>Indice</summary>
@@ -176,7 +175,7 @@ screen.blit(ball_surface, ball_rectangle) # afficher la "peinture" de la balle a
 - [ ] Déplacer le méchant de manière autonome, en ligne droite vers l’est.
 
 _Note :_
-- Vitesse de déplacement : de 1px par frame
+- Vitesse de déplacement : 1px par frame
 - Utiliser la méthode `move_ip` (pour "move in place") de l'objet `Rect` du méchant pour le déplacer relativement à sa position.
 - Pas grave si le méchant fini par sortir de l’écran ^^.
 
@@ -185,7 +184,7 @@ _Note :_
 - [ ] Mettre un visage sur le héros et sur le méchant.
 
 _Note :_
-- Vous trouverez ce qu’il vous faut dans le répertoire [`part2_assets`](...) du projet. Téléchargez ce répertoire à la racine de votre projet python.
+- Vous trouverez ce qu’il vous faut dans le répertoire [`part2_assets`](part2_assets) du projet. Téléchargez ce répertoire à la racine de votre projet python.
 
 <details>
 <summary>Indices</summary>
@@ -198,8 +197,8 @@ _Note :_
 
 _Note :_
 - Lorsque le héros sort du champ de vision du méchant, ce dernier reprend sa marche vers l’est.
-- Vitesse de déplacement: 1px par axe (x, y) (donc OK pour une diagonale). 
-- Plusieurs méthodes sont possibles, elles sont toutes valides.
+- Vitesse de déplacement : 1px par axe (x, y). 
+- Plusieurs méthodes sont possibles (gestion d'une "collision" avec un nouveau `Rect` ou comparaisons de positions), elles sont toutes valides.
 
 ## Prochaine mission ?
 Félicitation, vous avez maintenant assez d'outils en main pour commencer à écrire des jeux vraiment sympas. (Au passage, vous avez obtenu le grade d’**Apprenti Sorcier** 🧙)

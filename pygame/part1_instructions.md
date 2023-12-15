@@ -40,7 +40,8 @@ Exemples:
 <summary>Indices</summary>
 
 - Une frame sur deux, c'est une itération de la boucle principale sur deux.
-- Vous pouvez créer un variable qui vous aidera pour la condition du choix de la couleur.
+- Vous pouvez créer une variable qui vous aidera pour la condition du choix de la couleur.
+- Pensez à mettre également dans la boucle la ligne de code qui met à jour l'affichage écran (`display.flip()`).
 </details>
 
 
@@ -53,7 +54,7 @@ _Note :_
 <summary>Indices</summary>
 
 - Faire une animation, c'est augmenter un tout petit peu la taille du cercle à chaque itération de la boucle principale.
-- Pensez à mettre également dans la boucle la ligne de code qui met à jour l'affichage écran (`display.flip()`).
+- Pensez à mettre dans la boucle la ligne de code qui remplit l'arrière-plan (`screen.fill(...)`).
 - Vérifier à chaque itération que le cercle n'a pas atteint sa taille maximale.
 </details>
 
@@ -68,7 +69,6 @@ _Note :_
 
 - `MOUSEBUTTONDOWN` est l'événement produit lorsque le bouton de la souris est enfoncé.
 - `MOUSEBUTTONUP` est l'événement produit lorsque le bouton de la souris est relâché.
-- Pensez à mettre dans la boucle la ligne de code qui remplit l'arrière-plan (`screen.fill(...)`).
 </details>
 
 ## Prochaine mission ? 
