@@ -1,8 +1,11 @@
 import pygame
 
+WIDTH = 800
+HEIGHT = 600
+
 # ----- initialisation générale
 pygame.init()
-screen = pygame.display.set_mode((800, 600))  # fenêtre graphique de 800x600 pixels
+screen = pygame.display.set_mode((WIDTH, HEIGHT))  # fenêtre graphique de 800x600 pixels
 clock = pygame.time.Clock()  # pour contrôler la vitesse de rafraîchissement
 
 # ----- initialisation des éléments du jeu (création de surfaces, etc.)
