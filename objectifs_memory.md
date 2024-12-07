@@ -2,14 +2,14 @@
 - Générer nombre aléatoire
 - Afficher pendant n secondes
 - Le faire disparaître
-- 
+  
 indices : `randint`, `print`, `sleep`. 
 # Objectif 2 : Intéragir pour perdre ou gagner
 - Demander la réponse/input utilisateur
 - Convertir la réponse en entier
 - Comparer la réponse avec le nombre généré
 - Afficher si le joueur à gagné ou perdu
-- 
+  
 indices : `input`, `int`, `==`, `if`, `else`.
 # Objectif 3 : Nombre d’essais infini
 - Boucler tant que la réponse ne correspond pas au nombre généré
