@@ -7,8 +7,10 @@
 Tips
 Voir la documentation de random.
 
+```
 >>> pile_ou_face()
 pile
+```
 
 # Conseil Météo
 Écrire une fonction 
@@ -19,9 +21,11 @@ pile
         affiche “prend de l’eau” si T >= 10
     qui ne renvoie rien
 
+```
 >>> meteo_advice(9)
 prend ton écharpe
 prend ton manteau
+```
 
 # Moyenne d’âges
 Écrire une fonction 
@@ -32,8 +36,10 @@ prend ton manteau
 Tips
 La moyenne est calculée par la somme les éléments de la liste, divisée par le nombre d’éléments de la liste.
 
+```
 >>> age_average([15, 28, 42, 56])
 35.25
+```
 
 # Décodeur
 Écrire une fonction 
@@ -44,8 +50,10 @@ La moyenne est calculée par la somme les éléments de la liste, divisée par l
 Tips
 Les majuscules ne sont pas prises en compte.
 
+```
 >>> decode(“Qufllf bfllf jxurnff sur Xfnxn III !”)
 'Quelle belle journee sur Xenon III !'
+```
 
 # Générateur de pseudo
 Écrire une fonction 
@@ -55,8 +63,10 @@ Les majuscules ne sont pas prises en compte.
 Tips
 Définir une liste des syllabes possibles
 
+```
 >>> nickname(4)
 'patibulon'
+```
 
 # Carré ascii
 Écrire une fonction 
@@ -64,11 +74,13 @@ Définir une liste des syllabes possibles
     qui affiche un carré de taille n
     qui ne renvoie rien
 
+```
 >>> print_square(4, "*")
 ****
 ****
 ****
 ****
+```
 
 # Distance ennemie
 Écrire une fonction 
@@ -77,5 +89,7 @@ Définir une liste des syllabes possibles
         et “x” définit un ennemie
     qui renvoie la distance entre “x” et “o” la plus courte
 
+```
 >>> distance("-x----o--x---")
 2
+```
