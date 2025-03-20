@@ -4,7 +4,7 @@ RED = (255, 0, 0)  # Rouge (RGB)
 BLUE = (0, 0, 255)  # Bleu (RGB)
 
 pygame.init()
-clock = pygame.time.Clock()  # Pour pouvoir contrôler la vitesse de rafrachissement
+clock = pygame.time.Clock()  # Pour pouvoir contrôler la vitesse de rafraîchissement
 screen = pygame.display.set_mode((800, 600))  # Fenêtre graphique de 800x600 pixels
 
 screen.fill(BLUE)  # Remplit l'écran en bleu
