@@ -98,7 +98,7 @@ _Note :_
 <details>
 <summary>Indices</summary>
 
-- Obtenir une couleur aléatoire revient à générer aléatoirement les 3 composantes RGB qui la constitue.
+- Obtenir une couleur aléatoire revient à générer aléatoirement les 3 composantes RGB qui la constituent.
 - Les attributs uniques à chaque cercle sont : sa taille, sa position et sa couleur. Quels attributs ont une valeur "par défaut" et lesquels non ?
 - Ajouter une méthode `grow` à la classe `Circle` permet de simplifier la gestion des tailles.  
 </details>
