@@ -5,8 +5,8 @@
 - [ ] Ouvrir le fichier dans un éditeur de texte.
 - [ ] Exécuter le fichier.
 
-## Mission 1 : Peintre en herbe
-- [ ] Changer la couleur du fond, pour faire mettre une couleur "herbe".
+## Mission 1 : Ciel en peinture
+- [ ] Changer la couleur du fond, pour faire afficher une couleur représentant un "ciel nocturne" (tout ciel sera accepté).
 
 <details>
 <summary>Indices</summary>
@@ -34,7 +34,7 @@ Exemples:
 </details>
 
 ## Mission 3 : Y'a de l'ambiance
-- [ ] Changer la couleur du cercle une frame sur deux (couleur au choix).
+- [ ] Changer la couleur du cercle une frame sur deux (couleurs au choix).
 
 <details>
 <summary>Indices</summary>
@@ -49,7 +49,9 @@ Exemples:
 - [ ] Créer une animation qui agrandit le cercle (jusqu'à 200px de rayon).
 
 _Note :_
-- Lorsque le rayon du cercle atteint 200px, il repart à 0px, pour une animation infinie.
+- Lorsque le rayon du cercle atteint 200px, il repart à 10px, pour une animation infinie.
+- L’effet de clignotement ajouté précédemment peut être retiré.
+
 <details>
 <summary>Indices</summary>
 
@@ -67,12 +69,36 @@ _Note :_
 <details>
 <summary>Indices</summary>
 
-- `MOUSEBUTTONDOWN` est l'événement produit lorsque le bouton de la souris est enfoncé.
-- `MOUSEBUTTONUP` est l'événement produit lorsque le bouton de la souris est relâché.
+- `pygame.MOUSEBUTTONDOWN` est le type d'événement produit lorsque le bouton de la souris est **enfoncé**.
+- `pygame.MOUSEBUTTONUP` est le type d'événement produit lorsque le bouton de la souris est **relâché**.
 </details>
 
-## Prochaine mission ? 
-Bravo 👍 ! Vous avez terminé la première exploration de l'outil PyGame ! (et vous avez obtenu le grade **Scout** 🔥, si jamais ça pouvait vous faire de l'effet)
+## [Bonus] Mission 6 : Maître artificier
+- [ ] A chaque clic souris, faire apparaitre un cercle additionnel centré sur la position de la souris (au moment du clic).
 
+_Note :_
+- Les cercles ont tous la même taille.
+- L’effet de pause/reprise au clic ajouté précedemment peut être retiré.
 
-Pour continuer vos expériences vidéo ludique avec un héro 🦸‍, un bouclier 🛡 et des méchants 😈... Allez voir la [Partie 2](part2_instructions.md) !
+<details>
+<summary>Indices</summary>
+  
+- `pygame.mouse.get_pos()` retourne la position de la souris.
+- l’utilisation d’une liste pour stocker la position des cercles est probablement bienvenue.
+</details>
+
+## [Bonus] Mission 7 : Grand maître artificier
+- [ ] Chaque cercle ajouté commence avec une taille de 10px.
+- [ ] Chaque cercle se voit attribuer une couleur aléatoire.
+- [ ] Créer un objet `Circle` pour gérer les attributs de chaque cercle.
+
+_Note :_
+- Les cercles grandissent à présent indépendamment les uns des autres.
+
+<details>
+<summary>Indices</summary>
+
+- Obtenir une couleur aléatoire revient à générer aléatoirement les 3 composantes RGB qui la constitue.
+- Les attributs uniques à chaque cercle sont : sa taille, sa position et sa couleur. Quels attributs ont une valeur "par défaut" et lesquels non ?
+- Ajouter une méthode `grow` à la classe `Circle` permet de simplifier la gestion des tailles.  
+</details>
