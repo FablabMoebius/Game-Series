@@ -12,7 +12,7 @@
 <summary>Indices</summary>
 
 - Pour remplir une surface d'une couleur, on utilise sa méthode `fill()`.  
-- Elle prend en paramètre un tuple de 3 valeurs numériques (R, G, B), pour **(Red, Green, Blue)**, correspondant aux composantes de la couleur souhaitée. Ressource utile: [rgbcolorpicker.com](rgbcolorpicker.com).
+- Elle prend en paramètre un tuple de 3 valeurs numériques (R, G, B), pour **(Red, Green, Blue)**, correspondant aux composantes de la couleur souhaitée. Ressource utile: [rgbcolorpicker.com](https://rgbcolorpicker.com/).
 
 Exemples:
 - `(0, 0, 0)` correspond au noir. 
@@ -101,7 +101,7 @@ _Note :_
 <details>
 <summary>Rendu suggéré</summary>
 
-![mission_5](https://github.com/user-attachments/assets/89c11492-cb4c-48eb-b4ed-f5e1c06f6990)
+![mission_5](https://github.com/user-attachments/assets/ee7eba6f-e6e4-4b14-ac83-32a772769b06)
 </details>
 
 ## [Bonus] Mission 6 : Maître artificier
