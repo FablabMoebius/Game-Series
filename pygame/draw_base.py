@@ -1,7 +1,9 @@
 import pygame
 
-WHITE = (0, 0, 0)  # Blanc (RGB)
-RED = (255, 0, 0)  # Rouge Pur (RGB)
+RED = (255, 0, 0)  # Rouge pur (RGB)
+GREEN = (0, 255, 0) # Vert pur (RGB)
+BLUE = (0, 0, 255) # Bleu pur (RGB)
+WHITE = (255, 255, 255)  # Blanc (RGB)
 YELLOW = (239, 216, 91) # Jaune pastel (RGB)
 
 pygame.init()
