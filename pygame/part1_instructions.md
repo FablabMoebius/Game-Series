@@ -105,7 +105,7 @@ _Note :_
 </details>
 
 ## [Bonus] Mission 6 : Maître artificier
-- [ ] A chaque clic souris, faire apparaitre un cercle additionnel centré sur la position de la souris (au moment du clic).
+- [ ] À chaque clic de la souris, faire apparaître un nouveau cercle centré sur la position de la souris (au moment du clic).
 
 _Note :_
 - Les cercles ont tous la même taille.
@@ -114,7 +114,7 @@ _Note :_
 <details>
 <summary>Indices</summary>
   
-- `pygame.mouse.get_pos()` retourne la position de la souris.
+- `pygame.mouse.get_pos()` retourne la position de la souris (x, y).
 - l’utilisation d’une liste pour stocker la position des cercles est probablement bienvenue.
 </details>
 
@@ -125,18 +125,15 @@ _Note :_
 </details>
 
 ## [Bonus] Mission 7 : Grand maître artificier
-- [ ] Chaque cercle ajouté commence avec une taille de 10px.
+- [ ] Chaque nouveau cercle commence avec une taille de 10px et grandissent à présent indépendamment les uns des autres.
 - [ ] Chaque cercle se voit attribuer une couleur aléatoire.
-- [ ] Créer un objet `Circle` pour gérer les attributs de chaque cercle.
-
-_Note :_
-- Les cercles grandissent à présent indépendamment les uns des autres.
+- [ ] Définir une classe `Circle` pour gérer les attributs de chaque cercle.
 
 <details>
 <summary>Indices</summary>
 
 - Obtenir une couleur aléatoire revient à générer aléatoirement les 3 composantes RGB qui la constituent.
-- Les attributs uniques à chaque cercle sont : sa taille, sa position et sa couleur. Quels attributs ont une valeur "par défaut" et lesquels non ?
+- Les attributs uniques à chaque cercle sont : sa taille, sa position et sa couleur. Quels attributs ont une valeur "par défaut" et lesquels sont obligatoire à l'instanciation ?
 - Ajouter une méthode `grow` à la classe `Circle` permet de simplifier la gestion des tailles.  
 </details>
 
