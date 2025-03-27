@@ -11,8 +11,8 @@
 <details>
 <summary>Indices</summary>
 
-Pour remplir une surface d'une couleur, on utilise sa méthode `fill()`.  
-Elle prend en paramètre un tuple de 3 valeurs numériques (R, G, B), pour **(Red, Green, Blue)**, correspondant aux composantes de la couleur souhaitée.
+- Pour remplir une surface d'une couleur, on utilise sa méthode `fill()`.  
+- Elle prend en paramètre un tuple de 3 valeurs numériques (R, G, B), pour **(Red, Green, Blue)**, correspondant aux composantes de la couleur souhaitée. Ressource utile: [rgbcolorpicker.com](rgbcolorpicker.com).
 
 Exemples:
 - `(0, 0, 0)` correspond au noir. 
@@ -20,6 +20,13 @@ Exemples:
 - `(255, 0, 0)` au rouge.
 - `(128, 0, 128)` au violet.
 </details>
+
+<details>
+<summary>Rendu suggéré</summary>
+  
+![mission_1](https://github.com/user-attachments/assets/63f15022-2491-43c7-9f38-8783a6c51fd8)
+</details>
+
 
 ## Mission 2 : Géomètre
 - [ ] Centrer le cercle.
@@ -33,6 +40,13 @@ Exemples:
 - `radius`: permet de définir le rayon du cercle en pixel.
 </details>
 
+<details>
+<summary>Rendu suggéré</summary>
+
+![mission_2](https://github.com/user-attachments/assets/15ec7f62-f026-49eb-9923-f0fc45cbecca)
+</details>
+
+
 ## Mission 3 : Y'a de l'ambiance
 - [ ] Changer la couleur du cercle une frame sur deux (couleurs au choix).
 
@@ -44,6 +58,11 @@ Exemples:
 - Pensez à mettre également dans la boucle la ligne de code qui met à jour l'affichage écran (`display.flip()`).
 </details>
 
+<details>
+<summary>Rendu suggéré</summary>
+
+![mission_3](https://github.com/user-attachments/assets/f7f42040-8fb5-4ff1-a61a-598d1c21a2c7)
+</details>
 
 ## Mission 4 : Artificier
 - [ ] Créer une animation qui agrandit le cercle (jusqu'à 200px de rayon).
@@ -60,6 +79,12 @@ _Note :_
 - Vérifier à chaque itération que le cercle n'a pas atteint sa taille maximale.
 </details>
 
+<details>
+<summary>Rendu suggéré</summary>
+
+![mission_4](https://github.com/user-attachments/assets/32cf06e4-c4c0-4413-ae34-5ba87d12d844)
+</details>
+
 ## Mission 5 : Maitre du feu
 - [ ] Contrôler l’animation avec le bouton de la souris.
 
@@ -71,6 +96,12 @@ _Note :_
 
 - `pygame.MOUSEBUTTONDOWN` est le type d'événement produit lorsque le bouton de la souris est **enfoncé**.
 - `pygame.MOUSEBUTTONUP` est le type d'événement produit lorsque le bouton de la souris est **relâché**.
+</details>
+
+<details>
+<summary>Rendu suggéré</summary>
+
+![mission_5](https://github.com/user-attachments/assets/89c11492-cb4c-48eb-b4ed-f5e1c06f6990)
 </details>
 
 ## [Bonus] Mission 6 : Maître artificier
@@ -87,6 +118,12 @@ _Note :_
 - l’utilisation d’une liste pour stocker la position des cercles est probablement bienvenue.
 </details>
 
+<details>
+<summary>Rendu suggéré</summary>
+
+![mission_6](https://github.com/user-attachments/assets/9fdcfd0c-6bc7-42fc-923f-14db30e77cd1)
+</details>
+
 ## [Bonus] Mission 7 : Grand maître artificier
 - [ ] Chaque cercle ajouté commence avec une taille de 10px.
 - [ ] Chaque cercle se voit attribuer une couleur aléatoire.
@@ -101,4 +138,10 @@ _Note :_
 - Obtenir une couleur aléatoire revient à générer aléatoirement les 3 composantes RGB qui la constituent.
 - Les attributs uniques à chaque cercle sont : sa taille, sa position et sa couleur. Quels attributs ont une valeur "par défaut" et lesquels non ?
 - Ajouter une méthode `grow` à la classe `Circle` permet de simplifier la gestion des tailles.  
+</details>
+
+<details>
+<summary>Rendu suggéré</summary>
+
+![mission_7](https://github.com/user-attachments/assets/a40de833-50bc-45fc-acee-d866a821b119)
 </details>
