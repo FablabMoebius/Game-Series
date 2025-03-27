@@ -43,7 +43,7 @@ Exemples:
 <details>
 <summary>Rendu suggéré</summary>
 
-![mission_2](https://github.com/user-attachments/assets/15ec7f62-f026-49eb-9923-f0fc45cbecca)
+![mission_2](https://github.com/user-attachments/assets/8f839361-8570-429e-828c-d5b4239b2fe5)
 </details>
 
 
