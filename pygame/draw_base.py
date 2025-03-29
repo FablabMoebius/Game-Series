@@ -14,10 +14,12 @@ screen.fill(WHITE)  # Remplit l'écran en blanc
 pygame.draw.circle(screen, color=YELLOW, center=(100, 200), radius=25)  # Dessine un cercle jaune
 pygame.display.flip()  # Applique les changements graphiques effectués sur l'écran
 
-while True:
+running = True
+while running:
     clock.tick(10)  # 10 FPS (10 itérations par seconde)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            pygame.quit()
-            exit()
+            running = False
+
+pygame.quit()
 
