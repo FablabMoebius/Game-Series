@@ -51,12 +51,20 @@ _Note :_
 
 _Note :_
 - Enregistrer la variable de retour du `draw` pour obtenir un objet `Rect`.
-- La méthode [`colliderect`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect) de cet objet permet de détecter la collision entre 2 objets de type `Rect`.
+- La méthode `colliderect` de cet objet (`Rect`) permet de détecter la collision avec un autre objet de type `Rect`.
 
 <details>
 <summary>Indices</summary>
  
-- Exemple : `player_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`).
+- Exemple :
+```
+    racket_rect = pygame.draw.rect(screen, color="white", rect=(100, 70, 50, 50))
+    ball_rect = pygame.draw.circle(screen, color="yellow", center=(150, 20), radius=25)
+    if racket_rect.colliderect(ball_rect):
+        # Faire rebondir la balle
+```
+- `racket_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`) en fonction du résultat de la détection de la collision.
+
 </details>
 
 ## Mission 5 : ~~Du sang~~ Du rouge sur les mains
