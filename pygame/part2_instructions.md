@@ -57,13 +57,13 @@ _Note :_
 <summary>Indices</summary>
  
 - Exemple :
-```
-    racket_rect = pygame.draw.rect(screen, color="white", rect=(100, 70, 50, 50))
-    ball_rect = pygame.draw.circle(screen, color="yellow", center=(150, 20), radius=25)
-    if racket_rect.colliderect(ball_rect):
-        # Faire rebondir la balle
-```
-- `racket_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`) en fonction du résultat de la détection de la collision.
+  ```
+      racket_rect = pygame.draw.rect(screen, color="white", rect=(100, 70, 50, 50))
+      ball_rect = pygame.draw.circle(screen, color="yellow", center=(150, 20), radius=25)
+      if racket_rect.colliderect(ball_rect):
+          # Faire rebondir la balle
+  ```
+  `racket_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`) en fonction du résultat de la détection de la collision.
 
 </details>
 
