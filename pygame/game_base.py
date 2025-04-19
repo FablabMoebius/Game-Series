@@ -6,6 +6,8 @@ screen = pygame.display.set_mode((800, 600))  # fenêtre graphique de 800x600 pi
 clock = pygame.time.Clock()  # pour contrôler la vitesse de rafraîchissement
 
 # Initialisation des éléments du jeu (création de surfaces, chargement d'images, etc.)
+player_color = "pink"
+player_position = (400, 300)  # coordonnées du joueur
 
 # Boucle principale
 going = True
@@ -21,7 +23,7 @@ while going:
             going = False
 
     screen.fill(color="dark green")
-    pygame.draw.circle(screen, color="pink", center=(400, 300), radius=25)
+    pygame.draw.circle(screen, color=player_color, center=player_position, radius=25)
 
     # Applique tous les changements effectués à l'écran
     pygame.display.flip()
