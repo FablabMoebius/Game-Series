@@ -12,8 +12,8 @@
 <details>
 <summary>Indices</summary>
 
-- `MOUSEMOTION` est l'événement produit lorsque la souris bouge.
-- `mouse.get_pos()` est une fonction qui retourne la position de la souris sous forme d'un tuple (x, y).
+- `pygame.MOUSEMOTION` est le `type` d'événement produit lorsque la souris bouge.
+- `pygame.mouse.get_pos()` est une méthode qui retourne la position de la souris sous forme d'un tuple (x, y).
 </details>
 
 ## Mission 2 : Le bouclier (théorique) de l’espace
