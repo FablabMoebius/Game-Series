@@ -16,23 +16,22 @@
 - `pygame.mouse.get_pos()` est une méthode qui retourne la position de la souris sous forme d'un tuple (x, y).
 </details>
 
-## Mission 2 : Le bouclier (théorique) de l’espace
+## Mission 2 A : Le bouclier (théorique) de l’espace
 - [ ] Le joueur active son bouclier en restant appuyé sur la touche espace.
-  - [ ] Faire un `print("shield enabled")` lorsque le bouclier est activé.
-  - [ ] Faire un `print("shield disabled")` lorsque le bouclier est désactivé.
+  - [ ] Faire un `print("paré")` lorsque le bouclier est activé.
+  - [ ] Faire un `print("vulnérable")` lorsque le bouclier est désactivé.
 
 <details>
 <summary>Indices</summary>
 
-- `KEYDOWN` est l'événement produit lorsque l'on appuie sur une touche du clavier.
-- `KEYUP` est l'événement produit lorsque l'on relâche une touche du clavier.
-- `K_SPACE` est la touche espace.
+- `pygame.KEYDOWN` et `pygame.KEYUP` sont respectivement les `type` d'événements produits lorsque l'on appuie et relâche une touche du clavier.
+- `pygame.K_SPACE` est un évenement `key` correspondant à la touche espace (voir l'exemple de la touche échap dans le code).
 - Vous pouvez créer une variable qui mémorise l'état d'activation du bouclier.
 </details>
 
-## Mission 3 : Un presque vrai bouclier métallique
+## Mission 2 B : Un presque vrai bouclier métallique
 - [ ] Afficher le héros en gris lorsque le bouclier-armure est activé.
-
+- [ ] Retirer les `print` précédemment ajoutés.
 
 ## Mission 4 : Un méchant pas encore méchant
 - [ ] Afficher un carré de 50x50 pixels (hello le méchant!) quelque part dans le quart nord-ouest de l’écran.
