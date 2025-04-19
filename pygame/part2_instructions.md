@@ -33,7 +33,7 @@
 - [ ] Afficher le héros en gris lorsque le bouclier-armure est activé.
 - [ ] Retirer les `print` précédemment ajoutés.
 
-## Mission 4 : Un méchant pas encore méchant
+## Mission 3 : Un méchant pas encore méchant
 - [ ] Afficher un carré de 50x50 pixels (hello le méchant!) quelque part dans le quart nord-ouest de l’écran.
 
 _Note :_
@@ -42,10 +42,10 @@ _Note :_
 <details>
 <summary>Indice</summary>
 
--  `draw.rect(screen, color=(R, G, B), rect=(x, y, width, height))`
+-  `pygame.draw.rect(screen, color="black", rect=(x, y, width, height))`
 </details>
 
-## Mission 5 : LA rencontre (inoffensive)
+## Mission 4 : LA rencontre (inoffensive)
 - [ ] Détecter la collision entre le héros et le méchant en utilisant la méthode [`colliderect`](https://www.pygame.org/docs/ref/rect.html#pygame.Rect.colliderect).
   - [ ] Faire un `print("battle")` (ou `print("bisous")`, comme vous préférez) lorsque le héros et le méchant sont en contact.
 
@@ -59,7 +59,7 @@ _Note :_
 - Exemple : `player_rect.colliderect(ball_rect)` renvoi un booléen (`True` ou `False`).
 </details>
 
-## Mission 6 : ~~Du sang~~ Du rouge sur les mains
+## Mission 5 : ~~Du sang~~ Du rouge sur les mains
 - [ ] Changer la couleur du héros en rouge lorsqu'il est en collision.
 - [ ] Créer une variable correspondant aux points de vie du héros.
   - [ ] Perdre de la vie lorsque le héros est en collision.
