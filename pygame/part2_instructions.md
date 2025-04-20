@@ -134,13 +134,16 @@ Je tiens toutefois à dévoiler que ce petit humain aura un vrai visage dès la 
 
 - Exemple d'utilisation avec une balle:
 ```python
-# en dehors de la boucle
+# Initialisation de la surface en dehors de la boucle
 ball_surface = pygame.Surface((width, height))
-ball_surface.fill((R, G, B))
-# dans la boucle
-screen.blit(ball_surface, (x, y)) # copier la "peinture" de la ball à la position (x, y) de l’écran
+ball_surface.fill(color="yellow")
+# Dans la boucle
+while going:
+  # Traitements divers
+  screen.blit(ball_surface, (x, y)) # Copie la "peinture" de la ball à la position (x, y) de l’écran
+  pygame.display.flip()
 ```
-- L’appel à `blit` ne remplace pas l’appel à `display.flip()` qui s’occupe de mettre à jour la fenêtre graphique.
+- L’appel à `blit` ne remplace pas l’appel à `pygame.display.flip()` qui s’occupe de mettre à jour la fenêtre graphique.
 </details>
 
 ## Mission spéciale 8-B : Donner un cadre aux personnages
@@ -169,12 +172,16 @@ Et comme le monde est bien fait, la fonction `blit` peut prendre en paramètre u
 
 Exemple d'utilisation avec une balle :
 ```python
-# en dehors de la boucle
-ball_rectangle = ball_surface.get_rect()  # générer un cadre de la taille de la surface.  spécifier une position avec center=(x, y)
-# dans la boucle
-ball_rectangle.center = (x, y) # bouger le "cadre" (possibilité de spécifier top, bottom, left, right, au lieu de center)
-# plus loin dans la boucle
-screen.blit(ball_surface, ball_rectangle) # afficher la "peinture" de la balle au niveau du "cadre" situé à la position (x, y)
+# Initialisations en dehors de la boucle
+ball_surface = pygame.Surface((width, height))
+ball_surface.fill(color="yellow")
+ball_rectangle = ball_surface.get_rect()  #  Génère un cadre de la taille de la surface.
+# Dans la boucle
+while going:
+  # Traitement divers
+  ball_rectangle.center = (x, y)  # Bouge le "cadre" (possibilité de spécifier top, bottom, left, right, au lieu de center)
+  screen.blit(ball_surface, ball_rectange)  # Affiche la "peinture" de la balle au niveau du "cadre" (situé à la position x, y)
+  pygame.display.flip()
 ```
 </details>
 
@@ -199,17 +206,37 @@ _Note :_
 - Pour charger une image, utilisez la méthode `pygame.image.load("path/to/image.png")`. Elle retourne une `Surface` contenant l'image.
 </details>
 
-## Mission 11 : Un ennemi avec des yeux
-- [ ] Si votre héros entre le champ de vision du méchant (zone de 140x140 pixels), le méchant doit marcher dans sa direction.
+## Misson BONUS 10 B: De l'herbe à ~~chat~~ crabe
+
+- [ ] Créer une surface pour le background, pour lequel pour aurez chargé l'image d'herbes disponible dans les assets et afficher-la avec un `blit` sur l'écran.
+
+## Mission BONUS 11 : Un ennemi avec des yeux
+- [ ] Le méchant se déplace vers le joueur.
 
 _Note :_
-- Lorsque le héros sort du champ de vision du méchant, ce dernier reprend sa marche vers l’est.
 - Vitesse de déplacement : 1px par axe (x, y). 
-- Plusieurs méthodes sont possibles (gestion d'une "collision" avec un nouveau `Rect` ou comparaisons de positions), elles sont toutes valides.
 
-## Prochaine mission ?
-Félicitation, vous avez maintenant assez d'outils en main pour commencer à écrire des jeux vraiment sympas. (Au passage, vous avez obtenu le grade d’**Apprenti Sorcier** 🧙)
 
-Pour tester et affûter vos compétences de Game Designer 👨‍💻, passons à la réalisation d’un [PONG](part3_instructions.md) 🏓!  
-Promis, absolument rien de nouveau dans cette partie, s’agit d’appliquer les notions déjà vues pour créer un jeu basique mais légendaire ;)
+<details>
+<summary>Indices</summary>
 
+Pour vous simplifier la tâche, vous pouvez utiliser la fonction `get_relative_move` donnée ci-dessous, qui prend en paramètre les positions de 2 entités (A et B) et qui retourne la direction pour que B se déplace vers A.
+
+Par exemple:
+
+Si rect_a est en x=50 et y=100,  
+et rect_b est en x=20 et y=150  
+Il faut que B avance sur l'axe x (va vers l'est) et remonte sur l'axe y (va au nord) si il veut espérer rejoindre A.  
+C'est justement ce que nous donne `get_relative_move(rect_a, rect_b)` qui va renvoyer le tuple x=1, y=-1.  
+  
+```python
+def get_relative_move(a_pos, b_pos):
+    x_diff = a_pos[0] - b_pos[0]
+    move_x = (x_diff > 0) - (x_diff < 0)
+    y_diff = a_pos[1] - b_pos[1]
+    move_y = (y_diff > 0) - (y_diff < 0)
+    return move_x, move_y
+```
+
+Vous pouvez directement l'apppeler en paramètre de `move_ip`, comme suit : `b_rect.move_ip(get_relative_move(a_rect, b_rect))`
+</details>
