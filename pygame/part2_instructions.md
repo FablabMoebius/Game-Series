@@ -84,10 +84,10 @@ _Note :_
 - Quitter le jeu revient à quitter la boucle principale.
 </details>
 
-## Mission 7 : Parce que la meilleure attaque est la défense ?
+## Mission 6 : Parce que la meilleure attaque est la défense ?
 - [ ] Lorsque le bouclier est activé, notre héros ne doit pas perdre de vie (ni de sang) au contact de l'ennemi.
 
-## Mission spéciale 8-A : La puissance du blit
+## Mission spéciale 7 A : La puissance du blit
 
 _Préambule_ :
 
@@ -124,10 +124,10 @@ Assez discuté, passons à la pratique pour démystifier tout ça !
 
 _Note :_
 - Comme on ne vous a pas encore dévoilé tous les secrets des objets `Rect` utilisés pour la collision, cette partie ne sera 
-malheureusement plus fonctionnelle. Mais ne l’effacez surtout pas ! Elle remarchera dans la [deuxième partie de cette mission](#mission-spécial-8-b--donner-un-cadre-aux-personnages).  
+malheureusement plus fonctionnelle. Mais ne l’effacez surtout pas ! Elle remarchera dans la deuxième partie de cette mission.  
 Pour tester la partie A de cette mission, vous pouvez soit mettre en commentaire les lignes concernant la collision, soit les garder au chaud dans un fichier à part. 
 - Notre héros-rond va être remplacé par un héros-carré le temps de cette mission spéciale (ce qui pourrait être considéré comme une régression). 
-Je tiens toutefois à dévoiler que ce petit humain aura un vrai visage dès la mission 10 :)
+Je tiens toutefois à dévoiler que ce petit humain aura un vrai visage dès la mission 9 :)
 
 <details>
 <summary>Indices</summary>
@@ -146,7 +146,7 @@ while going:
 - L’appel à `blit` ne remplace pas l’appel à `pygame.display.flip()` qui s’occupe de mettre à jour la fenêtre graphique.
 </details>
 
-## Mission spéciale 8-B : Donner un cadre aux personnages
+## Mission spéciale 7 B : Donner un cadre aux personnages
 
 _Préambule_ :
 
@@ -185,7 +185,7 @@ while going:
 ```
 </details>
 
-## Mission 9 : Un méchant avec des pieds
+## Mission 8 : Un méchant avec des pieds
 - [ ] Déplacer le méchant de manière autonome, en ligne droite vers l’est.
 
 _Note :_
@@ -193,7 +193,7 @@ _Note :_
 - Utiliser la méthode `move_ip` (pour "move in place") de l'objet `Rect` du méchant pour le déplacer relativement à sa position.
 - Pas grave si le méchant fini par sortir de l’écran ^^.
 
-## Mission 10 : Restaurer leurs images
+## Mission 9 : Restaurer leurs images
 
 - [ ] Mettre un visage sur le héros et sur le méchant.
 
@@ -206,11 +206,11 @@ _Note :_
 - Pour charger une image, utilisez la méthode `pygame.image.load("path/to/image.png")`. Elle retourne une `Surface` contenant l'image.
 </details>
 
-## Misson BONUS 10 B: De l'herbe à ~~chat~~ crabe
+## Misson BONUS 9 B: De l'herbe à ~~chat~~ crabe
 
 - [ ] Créer une surface pour le background, pour lequel pour aurez chargé l'image d'herbes disponible dans les assets et afficher-la avec un `blit` sur l'écran.
 
-## Mission BONUS 11 : Un ennemi avec des yeux
+## Mission BONUS 10 : Un ennemi avec des yeux
 - [ ] Le méchant se déplace vers le joueur.
 
 _Note :_
