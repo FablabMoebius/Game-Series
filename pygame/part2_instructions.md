@@ -196,7 +196,7 @@ _Note :_
 ## Mission 9 : Restaurer leurs images
 
 - [ ] Mettre un visage sur le héros et sur le méchant.
-- [ ] Afficher son image avec le bouclier lorsque le bouclier est activé, afficher l'image du héro blessé lorsqu'il saigne.
+- [ ] Afficher l'image du héros protégé lorsque le héros a le bouclier est activé, afficher l'image du héros blessé lorsqu'il saigne.
 
 _Note :_
 - Vous trouverez ce qu’il vous faut dans le répertoire [`part2_assets`](part2_assets) du projet. Téléchargez ce répertoire à la racine de votre projet python.
