@@ -127,7 +127,7 @@ _Note :_
 malheureusement plus fonctionnelle. Mais ne l’effacez surtout pas ! Elle remarchera dans la deuxième partie de cette mission.  
 Pour tester la partie A de cette mission, vous pouvez soit mettre en commentaire les lignes concernant la collision, soit les garder au chaud dans un fichier à part. 
 - Notre héros-rond va être remplacé par un héros-carré le temps de cette mission spéciale (ce qui pourrait être considéré comme une régression). 
-Je tiens toutefois à dévoiler que ce petit humain aura un vrai visage dès la mission 9 :)
+Je tiens toutefois à dévoiler que ce petit humain aura un vrai visage dès la mission 9 :).
 
 <details>
 <summary>Indices</summary>
@@ -165,7 +165,7 @@ Et comme le monde est bien fait, la fonction `blit` peut prendre en paramètre u
 - Utiliser des objets `Rect` pour gérer l’emplacement des entités.
   - [ ] En dehors de la boucle, créer **un** objet `Rect` pour notre héros et un autre pour le méchant.
   - [ ] Utiliser la méthode `center` de cet objet pour re-positionner le héros.
-  - [ ] La collision doit être à nouveau fonctionnelle
+  - [ ] La collision doit être à nouveau fonctionnelle.
 
 <details>
 <summary>Indice</summary>
@@ -189,13 +189,14 @@ while going:
 - [ ] Déplacer le méchant de manière autonome, en ligne droite vers l’est.
 
 _Note :_
-- Vitesse de déplacement : 1px par frame
+- Vitesse de déplacement : 1px par frame.
 - Utiliser la méthode `move_ip` (pour "move in place") de l'objet `Rect` du méchant pour le déplacer relativement à sa position.
 - Pas grave si le méchant fini par sortir de l’écran ^^.
 
 ## Mission 9 : Restaurer leurs images
 
 - [ ] Mettre un visage sur le héros et sur le méchant.
+- [ ] Afficher son image avec le bouclier lorsque le bouclier est activé, afficher l'image du héro blessé lorsqu'il saigne.
 
 _Note :_
 - Vous trouverez ce qu’il vous faut dans le répertoire [`part2_assets`](part2_assets) du projet. Téléchargez ce répertoire à la racine de votre projet python.
@@ -204,6 +205,7 @@ _Note :_
 <summary>Indices</summary>
 
 - Pour charger une image, utilisez la méthode `pygame.image.load("path/to/image.png")`. Elle retourne une `Surface` contenant l'image.
+- Vous pouvez initialiser plusieurs surfaces qui seront affichées au niveau d'un même et unique `Rect` en fonction de la situation.
 </details>
 
 ## Misson BONUS 9 B: De l'herbe à ~~chat~~ crabe
@@ -225,8 +227,8 @@ Pour vous simplifier la tâche, vous pouvez utiliser la fonction `get_relative_m
 Par exemple:
 
 Si rect_a est en x=50 et y=100,  
-et rect_b est en x=20 et y=150  
-Il faut que B avance sur l'axe x (va vers l'est) et remonte sur l'axe y (va au nord) si il veut espérer rejoindre A.  
+et rect_b est en x=20 et y=150,
+il faut que B avance sur l'axe x (va vers l'est) et remonte sur l'axe y (va au nord) si il veut espérer rejoindre A.  
 C'est justement ce que nous donne `get_relative_move(rect_a, rect_b)` qui va renvoyer le tuple x=1, y=-1.  
   
 ```python
@@ -238,5 +240,5 @@ def get_relative_move(a_pos, b_pos):
     return move_x, move_y
 ```
 
-Vous pouvez directement l'apppeler en paramètre de `move_ip`, comme suit : `b_rect.move_ip(get_relative_move(a_rect, b_rect))`
+Vous pouvez directement l'apppeler en paramètre de `move_ip`, comme suit : `b_rect.move_ip(get_relative_move(a_rect, b_rect))`.
 </details>
