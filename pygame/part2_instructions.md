@@ -12,7 +12,6 @@
 <details>
 <summary>Indices</summary>
 
-- `pygame.MOUSEMOTION` est le `type` d'événement produit lorsque la souris bouge.
 - `pygame.mouse.get_pos()` est une méthode qui retourne la position de la souris sous forme d'un tuple (x, y).
 </details>
 
