@@ -190,8 +190,16 @@ while going:
 
 _Note :_
 - Vitesse de déplacement : 1px par frame.
-- Utiliser la méthode `move_ip` (pour "move in place") de l'objet `Rect` du méchant pour le déplacer relativement à sa position.
+- Utiliser la méthode `move_ip` (pour "move in place") de l'objet `Rect` du méchant pour le déplacer relativement à sa position. Cette méthode prend un seul argument, correspondant au tuple (x,y).
 - Pas grave si le méchant fini par sortir de l’écran ^^.
+
+<details>
+<summary>Indice</summary>
+
+Exemple: 
+Pour qu’une balle se déplace de 2 pixels vers la gauche et d’un pixel vers le bas:
+`ball_rect.move_ip((-2, 1))`
+</details>
 
 ## Mission 9 : Restaurer leurs images
 
