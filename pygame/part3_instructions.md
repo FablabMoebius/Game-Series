@@ -42,7 +42,7 @@ Rappel avec l’exemple de la balle:
 ```python
 # en dehors de la boucle
 ball_surface = pygame.Surface((width, height))
-ball_surface.fill((R, G, B))
+ball_surface.fill(color="white")
 ball_rectangle = ball_surface.get_rect(center=(x, y))
 # dans la boucle
 screen.blit(ball_surface, ball_rectangle)
@@ -58,8 +58,8 @@ _Note :_
 <details>
 <summary>Indices</summary>
 
-- Pour rappel, `MOUSEMOTION` est l'événement produit lorsque la souris bouge et `mouse.get_pos()` retourne d'un tuple (x, y).
-- Exemple pour attribuer une nouvelle position à un objet rectangle : `ball_rectangle.center = (x, y)`
+- Pour rappel, `pygame.mouse.get_pos()` retourne un tuple (x, y) avec les coordonnées de la position de la souris.
+- Exemple pour attribuer une nouvelle position à un objet rectangle : `ball_rectangle.center = (x, y)`.
 </details>
 
 ## Mission 4 : Une balle mobile
@@ -103,7 +103,7 @@ préférez utiliser `ball_rectangle.top <= 0`, car si la balle se déplace à pl
 - [ ] Lorsque que la balle touche une raquette, faire un print("rebond horizontal").
 
 _Note :_
-- Utilisez la méthode `colliderect`
+- Utilisez la méthode `colliderect` de l'object `Rect`.
 
 ## Mission 8 : Le rebond
 - [ ] Créer une fonction qui prend en paramètre une direction et un axe de rebond et qui retourne la nouvelle direction (suite au rebond).
@@ -125,22 +125,24 @@ def bounce(direction, axis):  # direction est un tuple (x, y), axis est une chai
 ```
 </details>
 
-## Prochaine mission ?
-Bravo **Padawan** (nouveau grade 💪), vous avez un Pong tout à fait jouable et honorable ! 
+## Missions Bonus
+Bravo **Padawan**, vous avez un Pong tout à fait jouable et respectable ! 
 Bien sûr, on peut l'améliorer. Comment ? Je vous laisse y réfléchir quelques secondes...
 <details>
-<summary>Quelques idées d'amélioration</summary>
+<summary>Quelques idées d'amélioration (liste non exhaustive)</summary>
 
-- compter et afficher un score, 
+- compter et afficher un score,
 - augmenter la vitesse de la balle,
 - proposer un mode 2 joueurs,
 - ajouter les effets sonores,
-- ajouter des effets visuels,
+- ajouter des effets/éléments graphiques,
 - ajouter des pièges sur la carte,
 - ajouter des bonus sur la carte,
 - pouvoir mettre en pause,
 - enregistrer le meilleur score.
 </details>
+
+À vous de jouer !
 
 Sachez qu'il y a encore plein de notions à explorer dans PyGame, comme l'utilisation des objets Sprites et des groupes de Sprites (et la collision multiple). 
 Hé oui, l'aventure continue ! 🤩
