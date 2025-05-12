@@ -1,4 +1,4 @@
-# Partie 3 - Le Pong
+# Le Pong
 
 ![pong_illustration](https://github.com/FablabMoebius/Game-Series/assets/14202917/892fb9f3-782e-4e7e-85c3-26d88e74e5a7)
 
